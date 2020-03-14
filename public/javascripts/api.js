@@ -18,6 +18,7 @@ export default {
   },
   // GET "EDIT PAGE" FOR SINGLE DOCUMENT
   getOne: e => {
+    document.removeEventListener("scroll", lazyload);
     let id = e.target.parentNode.dataset.id;
     let collection = e.target.parentNode.dataset.collection;
 

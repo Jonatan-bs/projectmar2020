@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-var spawn = require("child_process").spawn;
 
 module.exports = {
   create(req, res, next) {
@@ -8,10 +7,7 @@ module.exports = {
     model = mongoose.models[collection];
 
     if (model) {
-      const newDocument = new model({
-        _id: new mongoose.Types.ObjectId(),
-        ...req.body
-      });
+      const newDocument = new model(req.body);
 
       newDocument
         .save()

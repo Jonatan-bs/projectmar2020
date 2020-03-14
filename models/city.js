@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema(
   {
-    oldid: { type: Number, required: true, unique: true },
+    oldid: { type: Number, required: true },
     name: { type: String, required: true },
     countrycode: { type: String, required: true },
     district: { type: String, required: true },
