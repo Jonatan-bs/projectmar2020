@@ -3,19 +3,18 @@
   <head>
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="icon" type="image/svg" href="/images/world.svg">
     <script type="module" src="/javascripts/main.js"></script>
   </head>
   <body>
-    <div id="message" class="msg">
-      <p></p>
-    </div>
+
     <div id="menu">
       <div id="worldGifWrap">
         <img id="worldGif" src="images/world.gif" alt="spinning world" />
       </div>
       <div class="collection">
         <img src="images/world.svg" />
-        <p data-collection="city">city</p>
+        <p data-collection="city">City</p>
       </div>
       <div class="collection">
         <img src="images/world.svg" />
@@ -27,16 +26,34 @@
       </div>
       <div class="collection">
         <img src="images/world.svg" />
-        <p data-collection="countrylanguage">Countrylanguage</p>
+        <p data-collection="countrylanguage">Country language</p>
       </div>
       <div class="collection">
         <img src="images/world.svg" />
-        <p data-collection="governmentform">Governmentform</p>
+        <p data-collection="governmentform">Government form</p>
       </div>
     </div>
+
+    <div id="message" class="msg">
+      <p></p>
+    </div>
+
+    <div class="coverpicture">
+
+    </div>
+
     <div id="content">
       <p id="startName">WorldDB CMS</p>
-      <p id="startCap">"Change the world"</p>
+      <p id="startCap">
+        <div class="caption">
+          "Change the World"
+        </div>
+        <div class="info">
+          On this website, then it will be possible to be changing the information, which is stored in the database. This is done through both Node.JS and Mongoose Schemas, so it is easy to show off the information and change it on the website itself.<br/>
+          <br/>
+          If you wish to see the information to each, then click on each of the different menus to find the different fields within the categories. On these pages, then it will be possible to create a new entry within the database or by clicking on already existing entries, then you will be able to either delete or update the current information.
+        </div>
+      </p>
     </div>
   </body>
 </html>
